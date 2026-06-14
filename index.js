@@ -8,7 +8,7 @@ import settingsRouter from './routes/settings.js'
 dotenv.config()
 
 const app = express()
-app.use(cors({ origin: 'http://localhost:5173' }))
+app.use(cors({ origin: 'https://experience-frontend-jade.vercel.app' }))
 app.use(express.json())
 
 app.use('/api/settings', settingsRouter)
